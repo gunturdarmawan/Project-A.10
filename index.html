@@ -10,25 +10,42 @@
 <body>
 
     <!-- Header  Home aplication-->
-    <header>
-        <div class="logo">Logo name</div>
-        <div class="menu-aplication">
-            <ul>
-                <li id="about"><a href="#">About</a></li>
-                <li id="login"><a href="#">Login</a></li>
-            </ul>
+    <nav>
+        <div class="logo">
+          Logo
         </div>
-    </header>
+
+        <ul>
+          <li class="menu"><a href="#">Home</a></li>
+          <li class="menu"><a href="#">Discuss</a></li>
+          <li class="menu"><a href="#">About</a></li>
+          <li id="login"><a href="#">Login</a></li>
+        </ul>
+    </nav>
 
     <!-- main quote dan sub quote-->
     <div class="wrap-main-content">
-        <h1>Brings your Idea and Solutions, for our goodness.</h1>
-        <p>Suarakan ide dan solusimu di sini, mari bergabung bersama kami
-        untuk saling memajukan daerah-daerah di Indonesia.
-        </p>
 
-    <div class="anima-svg">
-        <svg height="448.831" viewBox="0 0 474.072 448.831">
+        <div class="content-left">
+          <h1>Brings your Idea and Solutions, for our goodness.</h1>
+          <div class="hastag">
+            <span class="hastag-content">#idea</span>
+            <span class="hastag-content">#solutions</span>
+            <span class="hastag-content">#Problem</span>
+          </div>
+          <p>Suarakan ide dan solusimu di sini, mari bergabung bersama kami
+          untuk saling memajukan daerah-daerah di Indonesia.
+          </p>    
+
+          <!-- Button home -->
+          <div class="btn-content">
+              <span class="bergabung">Bergabung</span>
+              <span class="pelajari">Pelajari</span>
+            </div>
+        </div>
+
+        <div class="anima-svg">
+          <svg height="448.831" viewBox="0 0 474.072 448.831">
             <defs>
               <linearGradient id="linear-gradient" y1="-0.028" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
                 <stop offset="0" stop-color="#ff0"/>
@@ -84,18 +101,12 @@
               </g>
             </g>
           </svg>
-    </div>    
-
-        <!-- Button home -->
-        <div class="wrap-button">
-            <span class="bergabung">Bergabung</span>
-            <span class="pelajari">Pelajari</span>
         </div>
     </div>
 
     <!-- Pengenalan Aplikasi-->
     <div class="wrap-description-content">
-        <h1 id="title1">Apa itu @namaAplikasi?</h1>
+        <h1 id="title1">Apa itu aplikasi?</h1>
 
         <div class="description">
             <div class="content">
@@ -121,7 +132,7 @@
         <!-- Pengenalan Sub content-->
 
         
-        <h1 id="title2">Tujuan Kami</h1>
+        <h1 id="title1">Tujuan Kami</h1>
 
         <div class="description-content2">
             <div class="content2">
@@ -136,7 +147,7 @@
                     yang ada di daerah kita.
                 </p>
             </div>
-            <div class="closing-quote">What are u waiting for?</div>
+            <div class="closing-quote" id="title1">What are u waiting for?</div>
             <button class="bergabung">Bergabung</button>
         </div>
     </div>
@@ -144,6 +155,7 @@
     <!-- footer penutup content -->
     <footer>
         <h1>Let's connect with us!</h1>
+        <div class="20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis facere labore ex, quidem optio laudantium, deleniti in, dicta quod earum suscipit explicabo quae sed. Quo fuga veritatis in impedit fugiat?</div>
         <p>copyright project A-10</p>
     </footer>
 
