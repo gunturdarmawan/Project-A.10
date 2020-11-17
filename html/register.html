@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <script type="javascript" src="/js/mobile.js"></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="/"><img id="logo" src="/asset/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/html/beranda.html">Home</a></li>
+                <li><a href="#">Discuss</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a href="/html/login.html" class="cta" href="#">Login</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Login</a>
+            <a href="#">Discuss</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/login.js"></script>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="l-container">
+            <img src="/asset/left-anima.svg" alt="anima-left">
+            <h1>Welcome to Ideasia</h1>
+            <p>Brings Your idea and solution for our goodness.</p>  
+            <div class="line-content">
+                <h6 id="line-content">OR REGISTER WITH</h6>
+            </div>                                    
+            <div class="login-logo">
+                <a href="#"><img src="/asset/google-logo.svg" alt="google-logo"></a>
+                <a href="#"><img src="/asset/logo-facebook.svg" alt="logo-facebook"></a>
+                <a href="#"><img src="/asset/twitter-logo.svg" alt="twitter-logo"></a>
+            </div>
+        </div>
+
+        <div class="r-container">
+            <h1>Create Account</h1>
+            <form action="#">
+                <input type="text" name="nama" id="nama" class= "input-style" placeholder="Nama" autocomplete="off" pattern=".{6,}" title="6 characters minimum" required><br><br>
+                <input type="email" name="email" id="email" class= "input-style" placeholder="Email"  autocomplete="off" required>
+                <h3>Pilih Lokasi anda</h3>
+                <select name="cars" id="provinsi" required>
+                    <option value="volvo">Provinsi</option>
+                    <option value="saab">Banten</option>
+                    <option value="mercedes">Yogyakarta</option>
+                    <option value="audi">Kalimantan</option>
+                </select>
+
+                <select name="cars" id="cars">
+                    <option value="volvo">Kota</option>
+                    <option value="saab">Serang</option>
+                    <option value="mercedes">Tangerang</option>
+                    <option value="audi">Cilegon</option>
+                </select>
+
+                <select name="cars" id="cars">
+                    <option value="volvo">kecamatan</option>
+                    <option value="saab">Cipocok</option>
+                    <option value="mercedes">Margasana</option>
+                    <option value="audi">cipare</option>
+                </select> <br> <br>
+
+                <input type="password" name="password" id="password" class= "input-style" placeholder="Password" autocomplete="off" pattern=".{8,}" title="8 characters minimum" required ><br><br><br>
+                <button type="submit" id="daftar">Daftar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
