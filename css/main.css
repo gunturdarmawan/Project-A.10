@@ -126,6 +126,10 @@
     padding-right: 4em;
 }
 
+.content-left p {
+    width: 90%;
+}
+
 .content-right {
     display: flex;
     justify-content: flex-end;
@@ -135,6 +139,8 @@
 .hastag {
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    top: 40px;
 }
 
 .hastag-content {
@@ -201,70 +207,127 @@
 }
 
 #anima {
-    width: 380px;
+    width: 350px;
 }
 
 
 /* Membuat style Description content */
 
-.wrap-description-content {
-    padding: 10% 10% 5%;
-}
-
 .description {
+    position: relative;
+    bottom: 40px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 3rem;
-}
-
-#title1 {
-    font-size: 2.6rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.content {
-    padding: 40px;
-    background-color: #464646;
-    border-radius: 10px;
+    grid-gap: 4rem;
+    margin: 0px 10%;
 }
 
 .content h1 {
     font-size: 2.1rem;
+    font-weight: 700;
     margin-bottom: 0.7rem;
 }
 
 .content p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.7;
+    width: 90%;
+}
+
+/* Next Content */
+
+ .next-title h1 {
+    margin: 5%;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.next-container1,
+.next-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5%;
+    margin: 7% 14%;
+}
+
+.next h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    width: 92%;
+}
+
+.next p {
     font-size: 1.5rem;
     font-weight: 600;
-    opacity: 0.6;
+    width: 80%;
+}
+
+.next-r {
+    margin-left: 20%;
+    width: 90%;
+}
+
+.next-anima-l img{
+    width: 400px;
+}
+
+.next-anima-r img {
+    width: 340px;
+    
+}
+
+/* last content */
+
+.last-content h1 {
+    margin-bottom: 2%;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.last-button {
+    display: flex;
+    justify-content: center;
+}
+
+.last-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5%;
 }
 
 /* Styling Footer */
 
 footer {
-    background: #000;
+    background: #222222;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 20px;
+  }
+  
+  .footer-logo a img {
+    width: 35px;
+    margin-right: 20px;
+  }
 
 footer h1 {
     font-size: 2em;
-    margin-top: 1.2em;
-}
-
-footer div {
-    text-align: center;
-    font-size: 1.5em;
-    align-self: center;
-    margin: 1% 20% 4% 20%;
-    opacity: 0.8;
 }
 
 footer p {
+    margin-top: 10px;
     font-size: 1.2em;
-    margin: 10px;
 }
 
 /*===== RWD =======*/
