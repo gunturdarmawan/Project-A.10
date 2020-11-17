@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="441.213" height="509.443" viewBox="0 0 441.213 509.443">
-  <g id="Group_151" data-name="Group 151" transform="translate(-1105.961 -2795.173)">
+  <g class="anima-utama" id="main-anima" data-name="main-anima" transform="translate(-1105.961 -2795.173)">
     <g id="jigsaw" transform="translate(1183.955 2880) scale(0.839 1)">
       <path id="Path_99" data-name="Path 99" d="M44.158,130.916c29.706-34.558,84.136-14.139,88.131,31.8h30.884V108.443h19.934c17.049,0,30.923-12.3,30.923-27.425,0-15.053-13.874-27.3-30.923-27.3H163.173V0H.462V162.711H30.78a53.963,53.963,0,0,1,13.378-31.8Z" transform="translate(0)" fill="#403f3f"/>
       <path id="Path_100" data-name="Path 100" d="M111.121,305.771c0-28.761,25.7-47.178,52.052-49.151V224.737H108.9v-18.9c0-16.766-12.915-30.923-28.2-30.923-16.6,0-26.521,15.721-26.521,30.923v18.9H.462V388.471H163.173V358.137c-27.019-2.332-52.052-24.42-52.052-52.366Z" transform="translate(0 -37.423)" fill="#403f3f"/>

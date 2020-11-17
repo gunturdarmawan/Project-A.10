@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
   }
 
   body {
-      background-color: #343434;
-      color: #FFFFFF;
-      font-family: 'nunito', sans-serif;
+    background-color: #343434;
+    color: #FFFFFF;
+    font-family: 'nunito', sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
   header {
@@ -20,6 +20,14 @@
 
   .logo {
     margin-right: auto;
+    margin-top: 8px;
+
+  }
+
+  .logo img {
+    height: 35px;
+    position: relative;
+    right: 20px;
   }
   
   .nav__links {
@@ -116,7 +124,7 @@
   /* Style Main-content */
 
 .wrap-main-content {
-    padding: 5% 10%;
+    padding: 3% 10%;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5em;
@@ -133,7 +141,11 @@
 .content-right {
     display: flex;
     justify-content: flex-end;
-    align-self: center;
+}
+
+.content-right svg {
+    width: 400px;
+    height: 400px;
 }
 
 .hastag {
@@ -206,16 +218,12 @@
     width: 150px;
 }
 
-#anima {
-    width: 350px;
-}
-
 
 /* Membuat style Description content */
 
 .description {
     position: relative;
-    bottom: 40px;
+    bottom: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 4rem;
