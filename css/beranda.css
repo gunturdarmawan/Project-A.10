@@ -101,6 +101,18 @@ a{
   opacity: 0.7;
 }
 
+.tbl-slide {
+  width: 100px;
+  height: 35px;
+  margin-right: 10px;
+  background-color: var(--first-color);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+}
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -124,7 +136,6 @@ a{
   height: 250px;
   border-radius: 10px;
   filter: brightness(70%);
-  animation: 1.5;
 }
 
 .l-navbar{

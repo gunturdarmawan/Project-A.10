@@ -54,9 +54,18 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
         setTimeout(showSlides, 6000);
     }
 
-    function stopImg(){
+    document.getElementById("sidebar").addEventListener("mouseover", mouseOver);
+    document.getElementById("sidebar").addEventListener("mouseout", mouseOut);
+
+    function mouseOver() {
+        clearTimeout(showSlides  );
+    }
+
+    function mouseOut() {
         
     }
+
+
 
 
     
