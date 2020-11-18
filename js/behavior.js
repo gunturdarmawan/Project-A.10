@@ -10,6 +10,8 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
         toggle.addEventListener('click', ()=>{
             // show navbar
             nav.classList.toggle('show')
+            // make r-content witdh smaller
+            
             // change icon
             toggle.classList.toggle('bx-x')
             // add padding to body
@@ -32,3 +34,30 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
     }
   }
   linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+
+
+//   Membuat script berita slideshow
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("container-berita");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 6000);
+    }
+
+    function stopImg(){
+        
+    }
+
+
+    
+
