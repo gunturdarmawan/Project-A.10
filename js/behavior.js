@@ -65,8 +65,5 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
         
     }
 
-
-
-
-    
+        
 

@@ -132,7 +132,7 @@ header {
       height: 550px;
       border-radius: 26px;
       display: grid;
-      grid-template-areas: 'left right right right';
+      grid-template-areas: 'left left left left right';
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
   }
 
@@ -145,9 +145,9 @@ header {
       padding: 5% 30px;
   }
 
-  .l-container h1, p {
+  .l-container h1 {
       text-align: center;
-      margin: 10px auto;
+      margin: 20px auto 5px;
   }
 
   .l-container h1 {
@@ -156,6 +156,8 @@ header {
   }
 
   .l-container p {
+      text-align: center;
+      margin: 5px auto -15px;
       font-size: 20px;
       width: 60%;
   }

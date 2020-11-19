@@ -400,5 +400,11 @@ a{
     display: none;
 
   }
+
+  .l-navbar{
+    bottom: 0;  
+    padding: 1rem 1rem 0 0;
+  }
+
 }
 
