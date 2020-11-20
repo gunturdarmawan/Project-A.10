@@ -59,11 +59,11 @@
             </nav>
         </div>
 
-        <div class="r-sidebar" id="sidebar">
+        <div class="r-sidebar" id="sidebar" onmouseover="stopImg(this)"  onmouseout="continueImg(this)" >
             <h1>Berita sekitar</h1>
             <div class="container-berita fade">
                 <div class="berita">
-                    <img onmouseover="stopImg()" src="/asset/riwayat-satu-kasus-baru-pasien-covid-19-di-yogyakarta.jpg" alt="berita">
+                    <img src="/asset/riwayat-satu-kasus-baru-pasien-covid-19-di-yogyakarta.jpg" alt="berita" class="img-berita">
                 </div>
                 <h2>Kasus korona</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, unde repellat in beatae autem quas eveniet?
@@ -73,7 +73,7 @@
             </div>
             <div class="container-berita fade">
                 <div class="berita">
-                    <img onmouseover="stopImg()" src="/asset/sky-view-jogja.png" alt="berita">
+                    <img src="/asset/sky-view-jogja.png" alt="berita" class="img-berita">
                 </div>
                 <h2>Liburan aman saat Pandemi</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur a deleniti repellendus nulla eaque velit vitae ut officiis eligendi fugiat, qui, provident minus tenetur dicta ipsam mollitia reprehenderit cumque.
@@ -83,7 +83,7 @@
             </div>
             <div class="container-berita fade">
                 <div class="berita">
-                    <img onmouseover="stopImg()" src="/asset/Kebakaran di bantul.jpg" alt="berita">
+                    <img src="/asset/Kebakaran di bantul.jpg" alt="berita" class="img-berita">
                 </div>
                 <h2>Kebakaran di bantul</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, unde repellat in beatae autem quas eveniet?
@@ -123,7 +123,7 @@
         </div>
         <div class="ide-content">
             <div class="ide-container">
-                <h3>Jhon doe #1</h3>
+                <h3>Jhon doe<span style="color: yellow;"> #1</span></h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                    Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                 </p>
@@ -140,7 +140,7 @@
                 </div>
             </div>
             <div class="ide-container">
-                <h3>Ara jane #2</h3>
+                <h3>Ara jane <span style="color: slateblue;"> #2</span></h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                    Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                 </p>
@@ -157,7 +157,7 @@
                 </div>
             </div>
             <div class="ide-container">
-                <h3>Jane doe #3</h3>
+                <h3>Jane doe<span style="color: sienna;"> #3</span></h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                    Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                 </p>
@@ -179,7 +179,7 @@
                 Semua solusi menarik
             </div>
             <div class="ide-content-all">
-                <div class="ide-container">
+                <div class="ide-container-biasa">
                     <h3>Jhon doe</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
@@ -199,7 +199,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ide-container">
+                <div class="ide-container-biasa">
                     <h3>Ara jane</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
@@ -219,7 +219,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ide-container">
+                <div class="ide-container-biasa">
                     <h3>Jane doe</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
@@ -240,7 +240,7 @@
                     </div>
                 </div>
     
-                <div class="ide-container">
+                <div class="ide-container-biasa">
                     <h3>Jhon doe</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
@@ -260,7 +260,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ide-container">
+                <div class="ide-container-biasa">
                     <h3>Ara jane</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
@@ -281,7 +281,7 @@
                     </div>
                 </div>
     
-                <div class="ide-container">
+                <div class="ide-container-biasa">
                     <h3>Ara jane</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.

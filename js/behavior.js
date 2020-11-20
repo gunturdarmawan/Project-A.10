@@ -1,17 +1,18 @@
 /*===== SHOW NAVBAR  =====*/ 
-const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+const showNavbar = (toggleId, navId, bodyId, headerId, sideId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId),
     bodypd = document.getElementById(bodyId),
-    headerpd = document.getElementById(headerId)
+    headerpd = document.getElementById(headerId),
+    sidebar = document.getElementById(sideId)
   
     // Validate that all variables exist
-    if(toggle && nav && bodypd && headerpd){
+    if(toggle && nav && bodypd && headerpd && sidebar){
         toggle.addEventListener('click', ()=>{
             // show navbar
             nav.classList.toggle('show')
             // make r-content witdh smaller
-            
+            sidebar.classList.toggle('small-side')
             // change icon
             toggle.classList.toggle('bx-x')
             // add padding to body
@@ -22,7 +23,7 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
     }
   }
   
-  showNavbar('header-toggle','nav-bar','body-pd','header')
+  showNavbar('header-toggle','nav-bar','body-pd','header', 'sidebar')
   
   /*===== LINK ACTIVE  =====*/ 
   const linkColor = document.querySelectorAll('.nav__link')
@@ -54,16 +55,25 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
         setTimeout(showSlides, 6000);
     }
 
-    document.getElementById("sidebar").addEventListener("mouseover", mouseOver);
-    document.getElementById("sidebar").addEventListener("mouseout", mouseOut);
+    // document.getElementById("sidebar").addEventListener("mouseover", mouseOver);
+    // document.getElementById("sidebar").addEventListener("mouseout", mouseOut);
 
-    function mouseOver() {
-        clearTimeout(showSlides  );
+    // mouseOver();
+
+    // function mouseOver() {
+    //     clearTimeout(showSlides);
+    //     var hoverAction = document.getElementsById("sidebar");
+    //     hoverAction.style.backgroundColor= "pink";
+    // }
+
+    function stopImg(hoverAction){
+        hoverAction.style.color= "black";
     }
 
-    function mouseOut() {
-        
+    function continueImg(cont){
+        cont.style.color= "white";
     }
+
 
         
 

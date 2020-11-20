@@ -209,6 +209,10 @@ a{
   width: 22%;
 }
 
+.small-side {
+  width: 26%;
+}
+
 /*Active links*/
 .active{
   color: var(--main-color);
@@ -315,10 +319,58 @@ a{
   width: 67%;
 }
 
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+
 .ide-container {
-    padding: 0.5rem 1rem;
-    border-radius: 10px 10px 0 10px;
-    border: 4px solid var(--first-color);
+  padding: .5rem 1.5rem 1rem 1.5rem ;
+  border-radius: 10px;
+  --borderWidth: 2px;
+  background: var(--bg-color);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ide-container::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation: rotate 4s linear infinite;
+}
+
+.ide-container::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background:var(--bg-color);
+  border-radius: 5px;
+}
+
+.ide-container-biasa {
+  padding: .8rem 1.2rem;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid var(--first-color);
 }
 
 .btn-ide-content {
