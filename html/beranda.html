@@ -5,16 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="/css/beranda.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <title>Beranda</title>
     </head>
     <body id="body-pd">
         <header class="header" id="header">
             <h3>Beranda</h3>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+            <div class="gotop">
+                <i class="bx bx-arrow-to-top" onclick="topFunction()" id="go-top"></i>             
+            </div>
         </header>
 
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <div class="gotop">
+            <i class="bx bx-arrow-to-top" onclick="topFunction()" id="go-top"></i>             
+        </div>
         <div class="l-navbar" id="nav-bar">
             <nav class="nav">
-                <div>
+                <div class="navbar-list">
                     <div class="header__toggle nav__logo">
                         <i class='bx bx-menu' id="header-toggle"></i>
                     </div>
@@ -60,7 +73,7 @@
         </div>
 
         <div class="r-sidebar" id="sidebar" onmouseover="stopImg(this)"  onmouseout="continueImg(this)" >
-            <h1>Berita sekitar</h1>
+            <h1></h1>
             <div class="container-berita fade">
                 <div class="berita">
                     <img src="/asset/riwayat-satu-kasus-baru-pasien-covid-19-di-yogyakarta.jpg" alt="berita" class="img-berita">
@@ -94,22 +107,31 @@
 
         </div>
 
-        <div class="header-text">
-            <h3>Good Morning, Guntur darmawan.</h3>
-        </div>  
+        <div class="header-text" id="text-greating">
+</div>  
 
         <div class="slide-content">
             <h1>Berikan solusi terbaikmu!</h1>
             <h3>Lorem ipsum dolor sit amet consectetur, corporis rerum laudantium odio praesentium aliquid mollitia voluptates doloribus, 
                 necessitatibus aut voluptas dolores, ipsum neque veritatis excepturi sequi esse.</h3>
-            <div class="slide-btn">
-                <div class="satu">
-                    <i class='bx bx-heart nav__icon' ></i>
-                    <span class="nav__name">1.2K</span>
+            <div class="container-element">
+                <div class="l-element">
+                    <div class="satu">
+                        <div class="center-icon">
+                            <i class='bx bx-heart nav__icon' ></i>
+                            <span class="nav__name">1.2K</span>
+                        </div>
+                    </div>
+                    <div class="dua">
+                        <div class="center-icon">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">8.2k</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="dua">
-                <i class='bx bx-bulb nav__icon' ></i>
-                <span class="nav__name">8.2k</span>
+                <div class="r-element">
+                    <div class="dibuka"><h4>Sampai: </h4></div>
+                    <div class="cntdown"><h3 id="countdown"></h3></div>
                 </div>
             </div>
         </div>
@@ -123,37 +145,41 @@
         </div>
         <div class="ide-content">
             <div class="ide-container">
-                <h3>Jhon doe<span style="color: yellow;"> #1</span></h3>
+                <h3>Jhon doe<span style="color: gold"> #1</span></h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                    Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                 </p>
                 <div class="btn-ide-content">
-                    <div class="null"></div>
-                    <a class="btn-ide ide-icon-up">
-                        <i class='bx bx-chevron-up' ></i>
-                        <span class="btn-name">451</span>
-                    </a>
-                    <a class="btn-ide ide-icon-down">
-                        <i class='bx bx-chevron-down' ></i>
-                        <span class="btn-name">25</span>
-                    </a>
+                    <div class="btn-ide-l">Balasan 125</div>
+                    <div class="btn-ide-r">
+                        <div class="btn-ide ide-icon-up" onclick="increment()">
+                            <i class='bx bx-chevron-up'></i>
+                            <span class="btn-name-up" id="upvote" type="number">451</span>
+                        </div>
+                        <div class="btn-ide ide-icon-down">
+                            <i class='bx bx-chevron-down' ></i>
+                            <span class="btn-name">25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ide-container">
-                <h3>Ara jane <span style="color: slateblue;"> #2</span></h3>
+                <h3>Ara jane <span style="color: silver;"> #2</span></h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                    Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                 </p>
                 <div class="btn-ide-content">
-                    <div class="null"></div>
-                    <a class="btn-ide ide-icon-up">
-                        <i class='bx bx-chevron-up' ></i>
-                        <span class="btn-name">51</span>
-                    </a>
-                    <a class="btn-ide ide-icon-down">
-                        <i class='bx bx-chevron-down' ></i>
-                        <span class="btn-name">51</span>
-                    </a>
+                    <div class="btn-ide-l">Balasan 72</div>
+                    <div class="btn-ide-r">
+                        <div class="btn-ide ide-icon-up">
+                            <i class='bx bx-chevron-up' ></i>
+                            <span class="btn-name-up">451</span>
+                        </div>
+                        <div class="btn-ide ide-icon-down">
+                            <i class='bx bx-chevron-down' ></i>
+                            <span class="btn-name">25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ide-container">
@@ -162,15 +188,17 @@
                    Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                 </p>
                 <div class="btn-ide-content">
-                    <div class="null"></div>
-                    <a class="btn-ide ide-icon-up">
-                        <i class='bx bx-chevron-up' ></i>
-                        <span class="btn-name">41</span>
-                    </a>
-                    <a class="btn-ide ide-icon-down">
-                        <i class='bx bx-chevron-down' ></i>
-                        <span class="btn-name">21</span>
-                    </a>
+                    <div class="btn-ide-l">Balasan 41</div>
+                    <div class="btn-ide-r">
+                        <div class="btn-ide ide-icon-up">
+                            <i class='bx bx-chevron-up' ></i>
+                            <span class="btn-name-up">451</span>
+                        </div>
+                        <div class="btn-ide ide-icon-down">
+                            <i class='bx bx-chevron-down' ></i>
+                            <span class="btn-name">25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,18 +213,17 @@
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                     </p>
                     <div class="btn-ide-content">
-                        <div class="btn-comment">
-                            Comment
+                        <div class="btn-ide-l">Balasan 41</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
                         </div>
-                        <div class="null"></div>
-                        <a class="btn-ide ide-icon-up">
-                            <i class='bx bx-chevron-up' ></i>
-                            <span class="btn-name">451</span>
-                        </a>
-                        <a class="btn-ide ide-icon-down">
-                            <i class='bx bx-chevron-down' ></i>
-                            <span class="btn-name">251</span>
-                        </a>
                     </div>
                 </div>
                 <div class="ide-container-biasa">
@@ -205,18 +232,17 @@
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                     </p>
                     <div class="btn-ide-content">
-                        <div class="btn-comment">
-                            Comment
+                        <div class="btn-ide-l">Balasan 74</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
                         </div>
-                        <div class="null"></div>
-                        <a class="btn-ide ide-icon-up">
-                            <i class='bx bx-chevron-up' ></i>
-                            <span class="btn-name">451</span>
-                        </a>
-                        <a class="btn-ide ide-icon-down">
-                            <i class='bx bx-chevron-down' ></i>
-                            <span class="btn-name">251</span>
-                        </a>
                     </div>
                 </div>
                 <div class="ide-container-biasa">
@@ -225,18 +251,17 @@
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                     </p>
                     <div class="btn-ide-content">
-                        <div class="btn-comment">
-                            Comment
+                        <div class="btn-ide-l">Balasan 6</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
                         </div>
-                        <div class="null"></div>
-                        <a class="btn-ide ide-icon-up">
-                            <i class='bx bx-chevron-up' ></i>
-                            <span class="btn-name">451</span>
-                        </a>
-                        <a class="btn-ide ide-icon-down">
-                            <i class='bx bx-chevron-down' ></i>
-                            <span class="btn-name">251</span>
-                        </a>
                     </div>
                 </div>
     
@@ -246,18 +271,17 @@
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                     </p>
                     <div class="btn-ide-content">
-                        <div class="btn-comment">
-                            Comment
+                        <div class="btn-ide-l">Balasan 48</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
                         </div>
-                        <div class="null"></div>
-                        <a class="btn-ide ide-icon-up">
-                            <i class='bx bx-chevron-up' ></i>
-                            <span class="btn-name">451</span>
-                        </a>
-                        <a class="btn-ide ide-icon-down">
-                            <i class='bx bx-chevron-down' ></i>
-                            <span class="btn-name">251</span>
-                        </a>
                     </div>
                 </div>
                 <div class="ide-container-biasa">
@@ -266,18 +290,17 @@
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                     </p>
                     <div class="btn-ide-content">
-                        <div class="btn-comment">
-                            Comment
+                        <div class="btn-ide-l">Balasan 264</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
                         </div>
-                        <div class="null"></div>
-                        <a class="btn-ide ide-icon-up">
-                            <i class='bx bx-chevron-up' ></i>
-                            <span class="btn-name">451</span>
-                        </a>
-                        <a class="btn-ide ide-icon-down">
-                            <i class='bx bx-chevron-down' ></i>
-                            <span class="btn-name">251</span>
-                        </a>
                     </div>
                 </div>
     
@@ -287,21 +310,145 @@
                        Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
                     </p>
                     <div class="btn-ide-content">
-                        <div class="btn-comment">
-                            Comment
+                        <div class="btn-ide-l">Balasan 64</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
                         </div>
-                        <div class="null"></div>
-                        <a class="btn-ide ide-icon-up">
-                            <i class='bx bx-chevron-up' ></i>
-                            <span class="btn-name">451</span>
-                        </a>
-                        <a class="btn-ide ide-icon-down">
-                            <i class='bx bx-chevron-down' ></i>
-                            <span class="btn-name">251</span>
-                        </a>
+                    </div>
+                </div>
+
+                <div class="ide-container-biasa">
+                    <h3>Jhon doe</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    </p>
+                    <div class="btn-ide-content">
+                        <div class="btn-ide-l">Balasan 51</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ide-container-biasa">
+                    <h3>Ara jane</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    </p>
+                    <div class="btn-ide-content">
+                        <div class="btn-ide-l">Balasan 541</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ide-container-biasa">
+                    <h3>Jane doe</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    </p>
+                    <div class="btn-ide-content">
+                        <div class="btn-ide-l">Balasan 51</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ide-container-biasa">
+                    <h3>Jhon doe</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    </p>
+                    <div class="btn-ide-content">
+                        <div class="btn-ide-l">Balasan 841</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ide-container-biasa">
+                    <h3>Ara jane</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                       <div class="btn-ide-content">
+                        <div class="btn-ide-l">Balasan 12</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ide-container-biasa">
+                    <h3>Ara jane</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    </p>
+                    <div class="btn-ide-content">
+                        <div class="btn-ide-l">Balasan</div>
+                        <div class="btn-ide-r">
+                            <div class="btn-ide ide-icon-up">
+                                <i class='bx bx-chevron-up' ></i>
+                                <span class="btn-name-up">451</span>
+                            </div>
+                            <div class="btn-ide ide-icon-down">
+                                <i class='bx bx-chevron-down' ></i>
+                                <span class="btn-name">25</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <script>
+                gsap.from('.ide-container', {
+                stagger: .5,
+                opacity: 0, 
+                duration: 1,
+                y: -0, delay: 0
+            });
+            </script>
 
         <!--===== MAIN JS =====-->
         <script src="/js/behavior.js"></script>
