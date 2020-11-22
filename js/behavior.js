@@ -26,8 +26,23 @@ const showNavbar = (toggleId, navId, bodyId, headerId, sideId, topId) =>{
     }
   }
   
-  showNavbar('header-toggle','nav-bar','body-pd','header', 'sidebar')
-  
+    showNavbar('header-toggle','nav-bar','body-pd','header', 'sidebar')
+
+  // JS Bugging --chevron
+
+    function openNav() {
+    document.getElementById("mySidebar").style.width = "360px";
+    document.getElementById("cls").style.display = "block";
+    document.getElementById("opn").style.display = "none";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("cls").style.display = "none";
+    document.getElementById("opn").style.display = "block";
+    }
+
+
   /*===== LINK ACTIVE  =====*/ 
   const linkColor = document.querySelectorAll('.nav__link')
   
@@ -38,7 +53,6 @@ const showNavbar = (toggleId, navId, bodyId, headerId, sideId, topId) =>{
     }
   }
   linkColor.forEach(l=> l.addEventListener('click', colorLink))
-
 
 
 //   Membuat script berita slideshow

@@ -10,18 +10,21 @@
     </head>
     <body id="body-pd">
         <header class="header" id="header">
-            <h3>Beranda</h3>
+            <div class="toggle-mobile nav__logo" onclick="openNav()">
+                <i class='bx bx-menu' id="opn"></i>
+            </div>
+            <div class="toggle-mobile nav__logo" onclick="closeNav()">
+                <i class='bx bx-x' id="cls"></i>
+            </div>          
+            <h3>Ideasia</h3>
             <div class="progress-container">
                 <div class="progress-bar" id="myBar"></div>
             </div>
             <div class="gotop">
                 <i class="bx bx-arrow-to-top" onclick="topFunction()" id="go-top"></i>             
             </div>
-        </header>
-
-        <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
-        </div>
+        </header>
         <div class="gotop">
             <i class="bx bx-arrow-to-top" onclick="topFunction()" id="go-top"></i>             
         </div>
@@ -29,9 +32,8 @@
             <nav class="nav">
                 <div class="navbar-list">
                     <div class="header__toggle nav__logo">
-                        <i class='bx bx-menu' id="header-toggle"></i>
+                        <i class='bx bx-chevron-right' id="header-toggle"></i>
                     </div>
-
                     <div class="nav__list">
                         <a href="#" class="nav__link active">
                         <i class='bx bx-home-smile nav__icon' ></i>
@@ -72,6 +74,49 @@
             </nav>
         </div>
 
+        <div id="mySidebar" class="sidebar">
+            <nav class="nav">
+                <div class="navbar-list">               
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                        <i class='bx bx-home-smile nav__icon' ></i>
+                            <span class="nav__name">Beranda</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">Profile</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-trophy nav__icon' ></i>
+                            <span class="nav__name">Trophy</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Favorites</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-map-pin nav__icon' ></i>
+                            <span class="nav__name">Lodadi</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bell nav__icon' ></i>
+                            <span class="nav__name">Notifications</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/index.html" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+            
         <div class="r-sidebar" id="sidebar" onmouseover="stopImg(this)"  onmouseout="continueImg(this)" >
             <h1></h1>
             <div class="container-berita fade">
@@ -107,7 +152,7 @@
 
         </div>
 
-        <div class="header-text" id="text-greating">
+        <!-- <div class="header-text" id="text-greating"> -->
 </div>  
 
         <div class="slide-content">
@@ -119,13 +164,13 @@
                     <div class="satu">
                         <div class="center-icon">
                             <i class='bx bx-heart nav__icon' ></i>
-                            <span class="nav__name">1.2K</span>
+                            <span class="nav__namer">1.2K</span>
                         </div>
                     </div>
                     <div class="dua">
                         <div class="center-icon">
                             <i class='bx bx-message-square-detail nav__icon' ></i>
-                            <span class="nav__name">8.2k</span>
+                            <span class="nav__namer">8.2k</span>
                         </div>
                     </div>
                 </div>
