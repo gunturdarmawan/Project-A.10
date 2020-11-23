@@ -137,5 +137,4 @@ const showNavbar = (toggleId, navId, bodyId, headerId, sideId, topId) =>{
             hasilConvert++;       
             document.getElementById('upvote').innerHTML= hasilConvert;
         }
-                
-
+             

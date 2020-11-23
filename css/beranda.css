@@ -87,6 +87,7 @@ a{
 #cls {
   display: none;
   font-size: 2.1rem;
+  color: #E61499;
 }
 
 #opn {
@@ -105,7 +106,6 @@ span.nav__name {
   top: 0;
   left: 0;
   background-color: #222;
-  overflow: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -113,11 +113,10 @@ span.nav__name {
 .sidebar a {
   padding: 8px 8px 8px 40px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 21px;
   color: #818181;
   display: block;
   transition: 0.3s;
-  overflow: hidden;
 }
 
 .sidebar a:hover {
@@ -332,9 +331,12 @@ span.nav__name {
   content: '';
   position: absolute;
   left: 0;
-  width: 4px;
-  height: 32px;
+  width: 20px;
+  height: 30px;
   background-color: var(--main-color);
+  z-index: -1;
+  border-radius: 0 100px 100px 0;
+  color: white;
 }
 
 /* header content styles */
@@ -416,7 +418,7 @@ span.nav__name {
 
 .line-content h2 {
     overflow: hidden;
-    margin-top: 4%;
+    margin-top: 5%;
   }
   
 .line-content  h2:before,
@@ -578,15 +580,16 @@ span.btn-name-up {
 }
 
 
-
 /* ===== MEDIA QUERIES=====*/
 
 @media screen and (max-width: 768px ) {
-  .header__toggle-r {
-    color: var(--main-color);
-  }
-  .r-sidebar {
+  .r-sidebar, .l-navbar {
     display: none;
+    width: 0;
+  }
+
+  .body-pd{
+    padding-left: 1.5rem;
   }
 
   .slide-content {
@@ -731,6 +734,36 @@ span.btn-name-up {
     font-weight: 600;
     opacity: .8;
   }  
+
+  .line-content {
+    margin-top: 3rem;
+  }
+
+  .line-content h2 {
+    overflow: hidden;
+    font-size: 16px;
+  }
+  
+.line-content  h2:before,
+  h2:after {
+    background-color: var(--first-color);
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+  }
+  
+.line-content  h2:before {
+    right: 1%;
+    width: 74%;
+  }
+  
+.line-content  h2:after {
+    left: 1%;
+    width: 10%;
+  }
+
   .ide-content, .ide-content-all {
     width: 100%;
   }
@@ -750,6 +783,14 @@ span.btn-name-up {
     background-image: linear-gradient(#222222,var(--main-color));
     animation: rotate 6s linear infinite;
   }
+
+  .cntdown {
+    margin-top: 25px;
+  }
+
+  #mySidebar, .toggle-mobile {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px){
@@ -765,6 +806,17 @@ span.btn-name-up {
 
   .r-sidebar {
     display: none;
+}
+
+
+.line-content  h2:before {
+  right: 1%;
+  width: 74%;
+}
+
+.line-content  h2:after {
+  left: 1%;
+  width: 11%;
 }
 
 .ide-content, .ide-content-all {
@@ -786,6 +838,14 @@ span.btn-name-up {
 }
 .r-sidebar p {
   opacity: 0.7;
+}
+
+.cntdown {
+  margin-top: 25px;
+}
+
+#mySidebar, .toggle-mobile {
+  display: none;
 }
 
 }
@@ -813,7 +873,26 @@ span.btn-name-up {
     margin-bottom: -20px;
   }
 
+  .line-content  h2:before {
+    right: 1%;
+    width: 51%;
+  }
+  
+  .line-content  h2:after {
+    left: 1%;
+    width: 10%;
+  }
+  
+
   .ide-content, .ide-content-all {
     width: 70%;
+  }
+
+  .cntdown {
+    margin-top: 22px;
+  }
+
+  #mySidebar, .toggle-mobile {
+    display: none;
   }
 }

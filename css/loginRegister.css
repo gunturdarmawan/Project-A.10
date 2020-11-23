@@ -1,0 +1,396 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+:root {
+    --bg-color: #343434;
+    --main-color: #222222;
+    --blue-color: #0099FF;
+    --red-color: #E61499;
+  }
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: 'nunito', sans-serif;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/* body {
+	background: var(--bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+    margin: -20px 0 50px;
+    color: #FFFFFF;
+} */
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 0px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+/* Membuat icon page */
+.icon-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transition:all 1s ease;
+}
+.icon-back a i {
+    font-family: 'nunito', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 50px;
+    color: white;
+}
+
+.back-name h3 {
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.icon-back:hover, .icon-back a i:hover {
+    left: 24%;
+    color: var(--blue-color);
+}
+
+
+button {
+	border-radius: 20px;
+	border: 1px solid var(--blue-color);
+	background-color: var(--blue-color);
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    color: white;
+}
+
+#signUp, #signIn {
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#signUp:hover, #signIn:hover {
+    border: 3px solid var(--blue-color);
+}
+
+.overlay-right p {
+    margin-top: 25px;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: var(--main-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 30px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: var(--main-color);
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+    min-height: 480px;
+    margin: 8% auto 5%;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: var(--bg-color);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+/* ME STYLE */
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+  }
+  
+  .login-logo a img {
+    position: relative;
+    width: 35px;
+    margin-right: 20px;
+    text-align: center;
+    bottom: 15px;
+  }
+
+  .overlay-left img {
+      width: 140px;
+  }
+
+  input.invalid {
+    background: #E61499;
+  }
+  
+  .input-style {
+      background-color: var(--second-color);
+      color: white;
+      width: 92%;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      border: 2px solid #707070;
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
+  
+  .input-style:focus {
+      background-color: var(--second-color);
+      outline: none;
+      border: 3px solid var(--blue-color);
+  }
+  
+  #daftar {
+      width: 92%;
+      height: 50px;
+      cursor: pointer;
+      background-color: var(--bg-color);
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+  }
+  
+  button {
+    position: relative;
+    top: 40px;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  .select-class {
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+  }
+  
+.sign-up-container h4 {
+      text-align: left;
+  }
+
+  select {
+      text-align: center;
+      width: 50%;
+      height: 35px;
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+      margin-right: 10px;
+      font-size: 16px;
+
+  }
+
+  button#daftar {
+      margin-top: -20px;
+  }
+  
+  ::placeholder {
+      color: rgb(112, 102, 102);
+  } 
+
+  .overlay-right img {
+      width: 125px;
+  }
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
