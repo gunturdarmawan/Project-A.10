@@ -137,4 +137,14 @@ const showNavbar = (toggleId, navId, bodyId, headerId, sideId, topId) =>{
             hasilConvert++;       
             document.getElementById('upvote').innerHTML= hasilConvert;
         }
-             
+
+// Membuat fungsi show and hide password 
+
+        function showPass() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }

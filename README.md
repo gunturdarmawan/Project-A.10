@@ -21,7 +21,7 @@ Actor:
     - Admin atau Pemerintah Daerah.
 
 Assignment (TO-DO):
-   ( ) Tampilan Aplikasi memuat HTML CSS JS dan WRD.
-   ( ) Erd Sesuai dengan kasus project.
-   ( ) Struktur Basis data Sesuai Hasil Konversi.
+   (*) Tampilan Aplikasi memuat HTML CSS JS dan WRD.
+   (*) Erd Sesuai dengan kasus project.
+   (*) Struktur Basis data Sesuai Hasil Konversi.
 

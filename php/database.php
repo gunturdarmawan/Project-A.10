@@ -10,7 +10,7 @@ class Database{
 	private $db_user = "user";  // Change as required
 	private $db_pass = "password";  // Change as required
 	private $db_name = "database";	// Change as required
-	
+  	
 	/*
 	 * Extra variables that are required by other function such as boolean con variable
 	 */

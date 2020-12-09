@@ -5,7 +5,7 @@
         <title>Home Idesia</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js" integrity="sha512-2vgSeT4mD0azBGIp91Fnho9fbT8ZG8zu5c+mK//TGxj4YNX2mRAwEZHtZsMRwA7ObqH6Vl7mMOdvkzNVTuhUcA==" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <a class="logo"><img id="logo" src="/asset/logo.svg" alt="logo"></a>
+            <a class="logo"><img id="logo" src="asset/logo.svg" alt="logo"></a>
             <nav>
                 <ul class="nav__links">
                     <li><a href="#">Home</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="#tujuan-kami">About</a></li>
                 </ul>
             </nav>
-            <a class="cta" href="/html/loginRegister.html">Login</a>
+            <a class="cta" href="html/loginRegister.html">Login</a>
             <p class="menu cta">Menu</p>
         </header>
         <div id="mobile__menu" class="overlay">
@@ -102,12 +102,12 @@
                     <p>Suarakan idea dan solusimu di sini mari bergabung Bersama kami, Bersama-sama memajukan daerah di Indonesia.</p>
                 </div>
                 <div class="next-anima-l">
-                    <img src="/asset/left-next.svg" alt="Anima">
+                    <img src="asset/left-next.svg" alt="Anima">
                 </div>
             </div>
             <div class="next-container2">
                 <div class="next-anima-r">
-                    <img src="/asset/main-anima.svg" alt="anima">
+                    <img src="asset/main-anima.svg" alt="anima">
                 </div>
                 <div class="next">
                     <h1>Power of Ideas</h1>
@@ -127,9 +127,9 @@
         <footer>
             <h1>Let's connect with us!</h1>
             <div class="footer-logo">
-                <a href="#"><img src="/asset/google-logo.svg" alt="google-logo"></a>
-                <a href="#"><img src="/asset/logo-facebook.svg" alt="logo-facebook"></a>
-                <a href="#"><img src="/asset/twitter-logo.svg" alt="twitter-logo"></a>
+                <a href="#"><img src="asset/google-logo.svg" alt="google-logo"></a>
+                <a href="#"><img src="asset/logo-facebook.svg" alt="logo-facebook"></a>
+                <a href="#"><img src="asset/twitter-logo.svg" alt="twitter-logo"></a>
             </div>
             <h3>Tugas Besar Pengembangan Aplikasi berbasis Web</h3>
             <p>&copy copyright project A-10</p>

@@ -80,6 +80,21 @@ a {
     color: white;
 }
 
+.icon-field-hide {
+	background: url('/asset/hide-regular-24.png') no-repeat 100%;
+	background-size: 20px;
+	background-color: white;
+	background-position: 255px 13px;
+	cursor: pointer;
+}
+
+/* .icon-field-see {
+	background: url('/asset/show-regular-24.png') no-repeat 100%;
+	background-size: 20px;
+	background-color: white;
+	background-position: 255px 13px;
+} */
+
 .back-name h3 {
     cursor: pointer;
     margin-left: -10px;

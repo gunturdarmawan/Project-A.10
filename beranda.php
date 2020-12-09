@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="/css/beranda.css">
+        <link rel="stylesheet" href="css/beranda.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <title>Beranda | Ideasia</title>
     </head>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <a href="/html/loginRegister.html" class="nav__link">
+                <a href="loginRegister.php" class="nav__link">
                     <i class='bx bx-log-out nav__icon' ></i>
                     <span class="nav__name">Log Out</span>
                 </a>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
 
-                <a href="/index.html" class="nav__link">
+                <a href="index.html" class="nav__link">
                     <i class='bx bx-log-out nav__icon' ></i>
                     <span class="nav__name">Keluar</span>
                 </a>
@@ -129,7 +129,7 @@
             <h1></h1>
             <div class="container-berita fade">
                 <div class="berita">
-                    <img src="/asset/riwayat-satu-kasus-baru-pasien-covid-19-di-yogyakarta.jpg" alt="berita" class="img-berita">
+                    <img src="asset/riwayat-satu-kasus-baru-pasien-covid-19-di-yogyakarta.jpg" alt="berita" class="img-berita">
                 </div>
                 <h2>Kasus korona</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, unde repellat in beatae autem quas eveniet?
@@ -139,7 +139,7 @@
             </div>
             <div class="container-berita fade">
                 <div class="berita">
-                    <img src="/asset/sky-view-jogja.png" alt="berita" class="img-berita">
+                    <img src="asset/sky-view-jogja.png" alt="berita" class="img-berita">
                 </div>
                 <h2>Liburan aman saat Pandemi</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur a deleniti repellendus nulla eaque velit vitae ut officiis eligendi fugiat, qui, provident minus tenetur dicta ipsam mollitia reprehenderit cumque.
@@ -149,7 +149,7 @@
             </div>
             <div class="container-berita fade">
                 <div class="berita">
-                    <img src="/asset/Kebakaran di bantul.jpg" alt="berita" class="img-berita">
+                    <img src="asset/Kebakaran di bantul.jpg" alt="berita" class="img-berita">
                 </div>
                 <h2>Kebakaran di bantul</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, unde repellat in beatae autem quas eveniet?
@@ -500,6 +500,6 @@
             </script>
 
         <!--===== MAIN JS =====-->
-        <script src="/js/behavior.js"></script>
+        <script src="js/behavior.js"></script>
     </body>
 </html>
