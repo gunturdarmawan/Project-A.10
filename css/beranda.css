@@ -362,6 +362,15 @@ span.nav__name {
     margin-bottom: -20px;
 }
 
+.comm {
+  background-color: var(--first-color);
+  width: 61%;
+  height: 20%;
+  padding: 0.4rem 1.8rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: -20px;
+}
+
 .container-element {
     display: grid;
     grid-template-columns: auto auto;

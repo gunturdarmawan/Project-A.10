@@ -132,8 +132,7 @@
                     <img src="asset/riwayat-satu-kasus-baru-pasien-covid-19-di-yogyakarta.jpg" alt="berita" class="img-berita">
                 </div>
                 <h2>Kasus korona</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, unde repellat in beatae autem quas eveniet?
-                Fugiat maxime repudiandae veniam illum, ipsam neque obcaecati consectetur?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id perspiciatis laborum, impedit excepturi porro. Veritatis quas sed aliquam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore inventore ea natus eveniet eos illum iusto voluptatem reprehenderit voluptate!</p>
+                <p>Pada 10 Desemeber 2020, kasus korona di kota yogyakarta terus meningkat, tempat-tempat berlibur dan kafe-kafe banyak yang sudah mulai menutup sementara, demi menekan kasus covid-19 ini, semoga corona ini cepat berlalu.</p>
                 <span><button class="tbl-slide" id="like">1.2K Like</button></span>
                 <span><button class="tbl-slide" id="comment">120 Comment</button></span>
             </div>
@@ -142,8 +141,7 @@
                     <img src="asset/sky-view-jogja.png" alt="berita" class="img-berita">
                 </div>
                 <h2>Liburan aman saat Pandemi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur a deleniti repellendus nulla eaque velit vitae ut officiis eligendi fugiat, qui, provident minus tenetur dicta ipsam mollitia reprehenderit cumque.
-                   In deserunt, qui recusandae quos rerum necessitatibus natus ex corrupti?</p>
+                <p>Seputar Tips dan trik liburan aman di masa pandemi saat ini, pertama Menggunakan Masker dan membawa sanitizer, kedua Jaga jarak minimal 1 meter dan yang terakhir hindari tempat keramaian atau kerumunan orang.</p>
                 <span><button class="tbl-slide" id="like">1.2K Like</button></span>
                 <span><button class="tbl-slide" id="comment">120 Comment</button></span>
             </div>
@@ -152,8 +150,9 @@
                     <img src="asset/Kebakaran di bantul.jpg" alt="berita" class="img-berita">
                 </div>
                 <h2>Kebakaran di bantul</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, unde repellat in beatae autem quas eveniet?
-                Fugiat maxime repudiandae veniam illum, ipsam neque obcaecati consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptate! Vel voluptatibus recusandae dolor accusamus aliquid consequuntur nulla sit reprehenderit sunt incidunt natus laborum cum, quisquam quaerat porro minima reiciendis maiores delectus?</p>
+                <p>
+                    Pada Sabtu 2020 telah terjadi kebakaran hebat di bantul tepatnya desa warungin, kobaran api cepat merambat dikarenakan angin kencang dan dan material sekitar rumah mudah terbakar, saat ini perkiraan kebakaraan terjadi karena konseleting listrik atau arus pendek listrik, untungnya tidak ada korban jiwa.
+                </p>
                 <span><button class="tbl-slide" id="like">1.2K Like</button></span>
                 <span><button class="tbl-slide" id="comment">120 Comment</button></span>
             </div>
@@ -161,20 +160,19 @@
 
         <div class="slide-content">
             <h1>Berikan solusi terbaikmu!</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur, corporis rerum laudantium odio praesentium aliquid mollitia voluptates doloribus, 
-                necessitatibus aut voluptas dolores, ipsum neque veritatis excepturi sequi esse.</h3>
+            <h3>Di masa pandemi saat ini, banyak sektor pariwisata dan kuliner di daerah kita sepi peminat, yang berdampak menurunnya pendapatan masyarakat sekitar, bagaimana solusi terbaik terkait permasalahan ini?</h3>
             <div class="container-element">
                 <div class="l-element">
                     <div class="satu">
                         <div class="center-icon">
                             <i class='bx bx-heart nav__icon' ></i>
-                            <span class="nav__namer">1.2K</span>
+                            <span class="nav__namer">1K</span>
                         </div>
                     </div>
                     <div class="dua">
                         <div class="center-icon">
                             <i class='bx bx-message-square-detail nav__icon' ></i>
-                            <span class="nav__namer">8.2k</span>
+                            <span class="nav__namer">302</span>
                         </div>
                     </div>
                 </div>
@@ -185,6 +183,14 @@
             </div>
         </div>
 
+        <!-- <div class="comm">
+            <form action="" method="POST">
+                <h3>Ikut Berpartisipasi pendapat:</h3>
+                <textarea name="pendapat" placeholder="Berikan solusi Terbaikmu!" required></textarea>
+                <button class="btn btn-done" name="submit">Launch</button>
+            </form>
+        </div> -->
+
         <div class="line-content">
             <h2 id="line-content">Solusi Terkait</h2>         
         </div>
@@ -194,9 +200,8 @@
         </div>
         <div class="ide-content">
             <div class="ide-container">
-                <h3>Jhon doe<span style="color: gold"> #1</span></h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                   Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                <h3>Ridwan agung<span style="color: gold"> #1</span></h3>
+                <p>Dengan membantu mempromosikan atau mengenalkan pariwisata, kuliner sekitar yang aman serta tetap memperhatikan protokol kesehatan dan arahan dari Pemerintah.
                 </p>
                 <div class="btn-ide-content">
                     <div class="btn-ide-l">Balasan 125</div>
@@ -214,8 +219,7 @@
             </div>
             <div class="ide-container">
                 <h3>Ara jane <span style="color: silver;"> #2</span></h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                   Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                <p>Memberi bantuan berupa edukasi masyarakat dalam berbisnis dengan media sosial atau internet agar dapat menambah pemasukan pendapatan masyarakat.
                 </p>
                 <div class="btn-ide-content">
                     <div class="btn-ide-l">Balasan 72</div>
@@ -232,9 +236,8 @@
                 </div>
             </div>
             <div class="ide-container">
-                <h3>Jane doe<span style="color: sienna;"> #3</span></h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                   Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                <h3>Putri rara<span style="color: sienna;"> #3</span></h3>
+                <p>Menurut saya sabar dan tetap berusaha adalah jalan terbaik untuk di masa pandemi saat ini dengan terus mengikuti arahan Pemerintah dan jangan mudah putus asa.
                 </p>
                 <div class="btn-ide-content">
                     <div class="btn-ide-l">Balasan 41</div>
@@ -258,8 +261,7 @@
             <div class="ide-content-all">
                 <div class="ide-container-biasa">
                     <h3>Jhon doe</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    <p>Kita bisa membantu dengan berdoa agar korona ini cepat berlalu
                     </p>
                     <div class="btn-ide-content">
                         <div class="btn-ide-l">Balasan 41</div>
@@ -277,8 +279,7 @@
                 </div>
                 <div class="ide-container-biasa">
                     <h3>Ara jane</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    <p>Sabar dan tetap semangattt!
                     </p>
                     <div class="btn-ide-content">
                         <div class="btn-ide-l">Balasan 74</div>
@@ -296,8 +297,7 @@
                 </div>
                 <div class="ide-container-biasa">
                     <h3>Jane doe</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    <p>Coba berjualan atau promosikan  ke internet atau media sosial.
                     </p>
                     <div class="btn-ide-content">
                         <div class="btn-ide-l">Balasan 6</div>
@@ -316,8 +316,7 @@
     
                 <div class="ide-container-biasa">
                     <h3>Jhon doe</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    <p>PEmerintah butuh memberikan bantuan khusus terkait penjual dan pemilik sektor pariwisata.
                     </p>
                     <div class="btn-ide-content">
                         <div class="btn-ide-l">Balasan 48</div>
@@ -335,8 +334,7 @@
                 </div>
                 <div class="ide-container-biasa">
                     <h3>Ara jane</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    <p>Berikan kemudahan berjual dan izin buka usaha di masa ini, dengan tetap memperhatikan protokol kesehatan.
                     </p>
                     <div class="btn-ide-content">
                         <div class="btn-ide-l">Balasan 264</div>
@@ -355,8 +353,7 @@
     
                 <div class="ide-container-biasa">
                     <h3>Ara jane</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                       Ut accusamus laudantium itaque delectus, tenetur possimus at quod fuga suscipit aut.
+                    <p>Indonesia Pasti bisa, bangkit dan hebat.
                     </p>
                     <div class="btn-ide-content">
                         <div class="btn-ide-l">Balasan 64</div>

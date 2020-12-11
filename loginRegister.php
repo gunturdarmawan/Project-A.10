@@ -4,14 +4,32 @@ require 'php/koneksi.php';
     if(isset($_POST["daftar"]) ){
 
         if(daftar($_POST) > 0){
-            echo"<script>
-                    alert('Berhasil Mendaftarkan akun');
-                </script>";
+           header("location: beranda.php");
+           die;
         } else {
             echo mysqli_error($conn);
         }
     }
 
+
+    if(isset($_POST["login"]) ) {
+
+        $username = $_POST["username"];
+        $password = $_POST["password"]; 
+
+        $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
+
+        if(mysqli_num_rows($result) === 1){
+
+            $row = mysqli_fetch_assoc($result);
+            if (password_verify($password, $row["password"]) ){
+                header("location: beranda.php");
+                exit;
+            } else {
+                echo "#alert-fail";
+            }
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +44,7 @@ require 'php/koneksi.php';
 </head>
 <body>
     <div class="icon-back">
-        <a href="/index.html">
+        <a href="index.php">
             <i class='bx bx-chevron-left'></i>
         </a>
         <div class="back-name"><h3>Back</h3></div>
@@ -65,8 +83,9 @@ require 'php/koneksi.php';
 		<form action="" method="post">
 			<h1>Login</h1><br>
             <form action="#">
-                <input type="text" name="nama" id="nama" class= "input-style" placeholder="Username"  autocomplete="off" pattern=".{6,}" title="6 characters minimum" required>
+                <input type="text" name="username" id="nama" class= "input-style" placeholder="Username"  autocomplete="off" pattern=".{6,}" title="6 characters minimum" required>
                 <input type="password" name="password" id="password" class= "input-style icon-field-hide icon-field-see" placeholder="Password" autocomplete="off" pattern=".{8,}" title="8 characters minimum" required>
+                <p id=alert-fail></p>
                 <button type="submit" name="login" id="daftar">Login</button>
             </form>
             <div class="line-content">

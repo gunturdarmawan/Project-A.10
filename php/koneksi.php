@@ -19,9 +19,17 @@ function daftar($data) {
 
 
     // Menambahkan User baru ke database
-    mysqli_query($conn, "INSERT INTO users ("username", "email", "password") VALUES('$username', '$email, '$password')");
-
+    mysqli_query($conn, "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')");
     return mysqli_affected_rows($conn);
-
 }
-?>
+
+function idea($data) {
+    global $conn;
+
+    $username = strtolower(stripcslashes($data["username"]));
+    $pendapat = strtolower(stripcslashes($data["pendapat"]));
+
+    // Menambahkan User baru ke database
+    mysqli_query($conn, "INSERT INTO users (pendapat) VALUES ('$pendapat')");
+    return mysqli_affected_rows($conn);
+}

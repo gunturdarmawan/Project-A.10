@@ -21,7 +21,7 @@
                     <li><a href="#tujuan-kami">About</a></li>
                 </ul>
             </nav>
-            <a class="cta" href="html/loginRegister.html">Login</a>
+            <a class="cta" href="loginRegister.php">Login</a>
             <p class="menu cta">Menu</p>
         </header>
         <div id="mobile__menu" class="overlay">
@@ -74,8 +74,7 @@
         <div class="description" id="description">
             <div class="content">
                 <h1>Ideasia</h1>
-                <p>Forum menyuarakan ide dan solusi terkait permasalahan
-                    yang ada di daerah kita.
+                <p>Bertujuan untuk membantu pemerintah daerah dan masyarakat
                 </p>
             </div>
             <div class="content">
@@ -86,8 +85,7 @@
             </div>
             <div class="content">
                 <h1>Why us?</h1>
-                <p>Forum menyuarakan ide dan solusi terkait permasalahan
-                    yang ada di daerah kita.
+                <p>Setiap Solusi ide mu, akan kami luncurkan, demi kebaikan dan kemajuan tiap daerah.
                 </p>
             </div>
         </div>
